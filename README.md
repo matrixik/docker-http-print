@@ -21,3 +21,20 @@ In Docker Compose file:
       - "5607:5607"
 ```
 
+## From Docker Hub:
+
+```bash
+$ docker run -e PORT=8090 -it --rm -p 8090:8090 matrixik/http-print
+```
+
+In Docker Compose file:
+```yaml
+  http-print:
+    image: matrixik/http-print
+    environment:
+      PORT: 5607
+      LOGSPOUT: ignore
+    ports:
+      - "5607:5607"
+```
+
