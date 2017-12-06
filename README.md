@@ -15,10 +15,10 @@ In Docker Compose file:
   http-print:
     image: docker-http-print
     environment:
-      PORT: 5607
+      PORT: 8090
       LOGSPOUT: ignore
     ports:
-      - "5607:5607"
+      - "8090:8090"
 ```
 
 ## From Docker Hub:
@@ -32,9 +32,9 @@ In Docker Compose file:
   http-print:
     image: matrixik/http-print
     environment:
-      PORT: 5607
+      PORT: 8090
       LOGSPOUT: ignore
     ports:
-      - "5607:5607"
+      - "8090:8090"
 ```
 
